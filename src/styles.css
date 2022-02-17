@@ -1,6 +1,6 @@
 #text {
     font-family: monospace, sans-serif;
-    background-color: aliceblue;
+    background-color: #e1ffd3;
     padding: 16px;
     border: 8px black;
     border-radius: 8px;
@@ -8,6 +8,10 @@
 }
 
 h2 {
+    text-align: center;
+}
+
+#search {
     text-align: center;
 }
 

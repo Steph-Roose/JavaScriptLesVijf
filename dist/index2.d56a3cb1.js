@@ -2128,4 +2128,4 @@ exports.export = function(dest, destName, get) {
 
 },{}]},["1Mq12","5HwUs"], "5HwUs", "parcelRequirecb08")
 
-//# sourceMappingURL=index.d56a3cb1.js.map
+//# sourceMappingURL=index2.d56a3cb1.js.map

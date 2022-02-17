@@ -1,24 +1,92 @@
+#text {
+    font-family: monospace, sans-serif;
+    background-color: #e1ffd3;
+    padding: 16px;
+    border: 8px black;
+    border-radius: 8px;
+    margin: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#search {
+    text-align: center;
+}
+
 ul {
     display: grid;
-    grid-template-rows: repeat(65, min-content);
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: repeat(84, max-content);
     grid-auto-flow: column;
+    padding: 0;
+}
+
+@media (max-width: 1080px) {
+    ul {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(125, max-content);
+    }
+}
+
+@media (max-width: 750px) {
+    ul {
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(300, max-content);
+    }
 }
 
 li {
     display: grid;
-    grid-auto-flow: row;
+    grid-template-columns: 16% 84%;
+    grid-template-rows: 32px 32px;
+    grid-gap: 4px;
+    grid-template-areas:
+       "a b"
+       "c c";
+    align-items: center;
+    margin: 8px;
+}
+
+.world-map {
+    width: 100%;
 }
 
 .flag {
-    width: 60px;
-    height: 40px;
+    grid-area: a;
+    width: 50px;
+    height: 30px;
 }
 
-h3 {
-    font-family: monospace, sans-serif;
+.name {
+    grid-area: b;
+    font-size: 13px;
 }
 
 .population {
-    font-family: monospace, sans-serif;
+    grid-area: c;
+    font-size: 15px;
 }
+
+.africa {
+    color: blue;
+}
+
+.americas {
+    color: green;
+}
+
+.asia {
+    color: red;
+}
+
+.europe {
+    color: gold;
+}
+
+.oceania {
+    color: purple;
+}
+
 /*# sourceMappingURL=index.be5cf2f4.css.map */
